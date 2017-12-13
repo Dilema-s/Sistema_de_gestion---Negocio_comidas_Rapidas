@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Sistema_de_gestión___Programación_III
+namespace CapaDatos
 {
     static class Program
     {
@@ -16,8 +16,7 @@ namespace Sistema_de_gestión___Programación_III
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Login());
-
+            //Application.Run(new Form1());
         }
     }
 }

@@ -33,7 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EPPlus, Version=4.1.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.1.1\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,14 +51,143 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmAgregarProductoComanda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmAgregarProductoComanda.Designer.cs">
+      <DependentUpon>FrmAgregarProductoComanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosComanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosComanda.Designer.cs">
+      <DependentUpon>FrmDatosComanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTicket.Designer.cs">
+      <DependentUpon>FrmTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ActualizarContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ActualizarContraseña.Designer.cs">
+      <DependentUpon>Frm_ActualizarContraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_AltaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_AltaProducto.Designer.cs">
+      <DependentUpon>Frm_AltaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Baja_Modificar_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Baja_Modificar_Producto.Designer.cs">
+      <DependentUpon>Frm_Baja_Modificar_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Comanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Comanda.Designer.cs">
+      <DependentUpon>Frm_Comanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Compra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Compra.Designer.cs">
+      <DependentUpon>Frm_Compra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ModificarReceta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ModificarReceta.Designer.cs">
+      <DependentUpon>Frm_ModificarReceta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Mozo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Mozo.Designer.cs">
+      <DependentUpon>Frm_Mozo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Principal.Designer.cs">
+      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Recetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Recetas.Designer.cs">
+      <DependentUpon>Frm_Recetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Reportes.Designer.cs">
+      <DependentUpon>Frm_Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Usuarios.Designer.cs">
+      <DependentUpon>Frm_Usuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAgregarProductoComanda.resx">
+      <DependentUpon>FrmAgregarProductoComanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosComanda.resx">
+      <DependentUpon>FrmDatosComanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTicket.resx">
+      <DependentUpon>FrmTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ActualizarContraseña.resx">
+      <DependentUpon>Frm_ActualizarContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_AltaProducto.resx">
+      <DependentUpon>Frm_AltaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Baja_Modificar_Producto.resx">
+      <DependentUpon>Frm_Baja_Modificar_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Comanda.resx">
+      <DependentUpon>Frm_Comanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Compra.resx">
+      <DependentUpon>Frm_Compra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ModificarReceta.resx">
+      <DependentUpon>Frm_ModificarReceta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Mozo.resx">
+      <DependentUpon>Frm_Mozo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Principal.resx">
+      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Recetas.resx">
+      <DependentUpon>Frm_Recetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Reportes.resx">
+      <DependentUpon>Frm_Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Usuarios.resx">
+      <DependentUpon>Frm_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +196,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +211,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaNegocios\CapaNegocios.csproj">
+      <Project>{311c5350-e1c8-4281-90c0-4f239929a006}</Project>
+      <Name>CapaNegocios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_multicolor.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
